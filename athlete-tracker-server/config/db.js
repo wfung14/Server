@@ -2,6 +2,7 @@
 const mongooseBaseName = 'dnd-campaign-tracker'
 
 
+
 const database = {
 	development: `mongodb://localhost/${mongooseBaseName}-development`,
 	test: `mongodb://localhost/${mongooseBaseName}-test`,
