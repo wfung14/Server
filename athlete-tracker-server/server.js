@@ -9,6 +9,8 @@ const PORT = 3005
 const athleteRoutes = require('./routes/athlete-routes')
 const requestLogger = require('./lib/request-logger')
 const athleteSeed = require('./lib/athlete-seed')
+const statRoutes = require('./routes/stat-routes')
+const userRoutes = require('./routes/user-routes')
 
 
 mongoose.set('strictQuery', true)
@@ -37,6 +39,8 @@ app.use(requestLogger)
 
 app.use(athleteRoutes)
 app.use('/seed', athleteSeed)
+app.use(statRoutes)
+app.use(userRoutes)
 
 app.listen(PORT, () => {
     console.log('listening on ' + PORT)

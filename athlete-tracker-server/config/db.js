@@ -1,5 +1,5 @@
 
-const mongooseBaseName = 'dnd-campaign-tracker'
+const mongooseBaseName = 'athlete-tracker'
 
 
 

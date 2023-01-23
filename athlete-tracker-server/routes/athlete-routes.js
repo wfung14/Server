@@ -1,4 +1,4 @@
-const express =require('express')
+const express = require('express')
 
 const { handle404 } = require('../lib/custom-errors')
 
